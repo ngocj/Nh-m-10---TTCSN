@@ -7,246 +7,106 @@
     <!--đã link với tailwind css-->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Header</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .image-container {
-            display: inline-block;
-            /* Đảm bảo container chỉ chiếm không gian cần thiết */
-            position: relative;
-            /* Cho phép bạn sử dụng position absolute cho hover */
-        }
-
-        .image-container:hover img {
-            transform: scale(1.1);
-            /* Hiệu ứng phóng to ảnh khi hover */
-        }
-
-        .image-container img {
-            transition: transform 0.3s ease;
-            /* Áp dụng chuyển đổi mềm mại */
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Container for flexboxes */
-        .row {
-            display: -webkit-flex;
-            display: flex;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        /* Create three equal columns that sits next to each other */
-        .column {
-            -webkit-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-            padding: 10px;
-            height: 300px;
-            /* Should be removed. Only for demonstration */
-        }
-
-        .beautiful-button {
-            background-color: blue;
-            /* Màu nền */
-            border: none;
-            /* Loại bỏ đường viền */
-            color: white;
-            /* Màu chữ */
-            padding: 15px 30px;
-            /* Kích thước nút */
-            text-align: center;
-            /* Căn chỉnh văn bản vào giữa */
-            text-decoration: none;
-            /* Loại bỏ gạch chân */
-            display: inline-block;
-            /* Hiển thị là block element */
-            font-size: 12px;
-            /* Cỡ chữ */
-            border-radius: 8px;
-            /* Bo tròn góc */
-            transition-duration: 0.4s;
-            /* Thời gian chuyển đổi */
-            cursor: pointer;
-            /* Biến con trỏ thành bàn tay khi di chuột qua */
-            margin-left: 100px;
-        }
-
-        .beautiful-button:hover {
-            background-color: #45a049;
-            /* Màu nền khi hover */
-            color: white;
-            /* Màu chữ khi hover */
-        }
-
-        .button {
-            background-color: blue;
-            /* Màu nền */
-            border: none;
-            /* Loại bỏ đường viền */
-            color: white;
-            /* Màu chữ */
-            padding: 15px 30px;
-            /* Kích thước nút */
-            text-align: center;
-            /* Căn chỉnh văn bản vào giữa */
-            text-decoration: none;
-            /* Loại bỏ gạch chân */
-            display: inline-block;
-            /* Hiển thị là block element */
-            font-size: 12px;
-            /* Cỡ chữ */
-            border-radius: 8px;
-            /* Bo tròn góc */
-            transition-duration: 0.4s;
-            /* Thời gian chuyển đổi */
-            cursor: pointer;
-            /* Biến con trỏ thành bàn tay khi di chuột qua */
-            justify-content: center;
-        }
-
-        .chuanut {
-            display: flex;
-            justify-content: center;
-            /* Căn giữa theo chiều ngang */
-            margin-top: 10px;
-        }
-
-        .chua_thu_tuc {
-            display: flex;
-            justify-content: center;
-            /* Căn giữa theo chiều ngang */
-        }
-    </style>
 </head>
 
 <body>
-    <!--content-->
-    <div>
-        <img src="https://www.haui.edu.vn/media/2/ufi2861.jpg" alt="image">
-    </div>
-    <div class="bg-blue-900 flex text-white" style="text-indent: 100px;">
-        <h2> +84.243.765.5121 số lẻ 277/255. Hotline: 08.3456.0255</h2>
+    <!--header-->
+    <div class="bg-blue-900 flex items-center justify-center text-white">
+        <a class="px-2 py-1 text-sm" href="">Lãnh đạo</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Phòng</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Khoa</a>
+        <a class="px-2 py-1 text-sm" href="">TT Đào tạo</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">TT Dịch vụ</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Viện nghiên cứu</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Trường thuộc HAUI</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Đoàn thể</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Tạp chí KH&CN</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Thư viện</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Thư điện tử</a>
+        <a class="px-2 py-1 text-sm" href="">|</a>
+        <a class="px-2 py-1 text-sm" href="">Sitemap</a>
     </div>
     <div class="flex items-center px-40 py-5 font-bold text-blue-900 ">
         <div class="flex items-center">
-            <img class="h-12 w-12" src="anh_logo_truong.jpg" alt="logo">
-            <div class="" style="">
-                <h1 class="px-2" style="color: red;">CỔNG THÔNG TIN TUYỂN SINH</h1>
-                <h1 class="px-2">ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI</h1>
-            </div>
+            <img class="h-12 w-12" src="img/logo.jpg" <h1 class="px-2">ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI</h1>
         </div>
         <div class="flex ml-20 relative">
-            <a class="px-2 text-sm hover:text-blue-950" href="TuyenSinh.html">TRANG HAUI</a>
-            <a class="px-2 text-sm hover:text-blue-950" href="">TRANG CHỦ</a>
-            <a class="px-2 text-sm hover:text-blue-950" href="KhoaCongNghe.html">TIN TỨC</a>
-            <a class="px-2 text-sm hover:text-blue-950" href="HuongNghiep.html">HỎI ĐÁP</a>
-            <a class="px-2 text-sm hover:text-blue-950" href="">ĐĂNG KÝ XÉT TUYỂN</a>
-            <a class="px-2 text-sm hover:text-blue-950" href="">ALBUM ẢNH</a>
-            <a class="px-2 text-sm hover:text-blue-950" href="">LIÊN HỆ</a>
-            <img src="anh_tim_kiem.webp" alt="" style="height: 30px;width: 30px;">
+            <a href="GioiThieu.html" class="flex px-2 text-sm hover:">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path
+                        d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                    <path
+                        d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                </svg>
+                GIỚI THIỆU
+            </a>
+            <a class="px-2 text-sm hover:text-blue-950" href="TuyenSinh.html">TUYỂN SINH</a>
+            <a class="px-2 text-sm hover:text-blue-950" href="">ĐÀO TẠO</a>
+            <a class="px-2 text-sm hover:text-blue-950" href="KhoaCongNghe.html">KHOA CÔNG NGHỆ</a>
+            <a class="px-2 text-sm hover:text-blue-950" href="HuongNghiep.html">HƯỚNG NGHIỆP</a>
+            <a class="px-2 text-sm hover:text-blue-950" href="">SINH VIÊN</a>
+            <a class="px-2 text-sm hover:text-blue-950" href="">EGOV</a>
         </div>
     </div>
-    <div class="anhlogo" style="margin-left: 100px;margin-right: 100px;">
-        <img src="anh_gioi_thieu.png" alt="">
+    <!--header-->
+    <!--content-->
+    <div>
+        <img src="https://tuyensinh.haui.edu.vn/images/image/HE-THONG-DANG-KY-XET-TUYEN.gif" alt="image">
     </div>
-    <div class="chua" style="margin-left: 50px;margin-right: 10px;">
-        <div class="image-container">
-            <img src="sau_dai_hoc.png" alt="Animated Image">
-        </div>
-        <div class="image-container">
-            <img src="dai_hoc.png" alt="Animated Image">
-        </div>
-        <div class="image-container">
-            <img src="lien_thong_xanh.png" alt="Animated Image">
-        </div>
-        <div class="image-container">
-            <img src="cao_dang_xanh.png" alt="Animated Image">
-        </div>
+    <div class="flex justify-around m-5">
+        <img class="w-80 h-54 m-auto shadow-md radius-md"
+            src="https://tuyensinh.haui.edu.vn/static/uploads/thumbs/1712576350017.jpg" alt="">
+        <img class="w-80 h-54 m-auto shadow-md radius-md"
+            src="https://tuyensinh.haui.edu.vn/static/uploads/thumbs/1712569095130.jpg" alt="">
+        <img class="w-80 h-54 m-auto shadow-md radius-md"
+            src="https://tuyensinh.haui.edu.vn/static/uploads/thumbs/1710690395842.jpg" alt="">
+        <img class="w-80 h-54 m-auto shadow-md radius-md"
+            src="https://tuyensinh.haui.edu.vn/static/uploads/thumbs/1710079400629.jpg" alt="">
     </div>
-    <h1 style="text-align: center;font-weight: bold;font-size: large;color: blue;margin-top: 20px;">TIN TUYỂN SINH</h1>
-    <!-- /*phần tin tức*/ -->
-    <div class="row" style="margin-top:50px ;margin-bottom: 20px;">
-        <div class="column" style="background-color:#aaa;">
-            <img src="tin_tuc_2024.png" alt="" class="anh_tin">
-            <h2>Đại học Công nghiệp Hà Nội tư vấn tuyển sinh hướng nghiệp tại Đại học Bách khoa Hà Nội</h2>
-            <h3>Ngày đăng: 17/03/2024 04:00:00
-                Sáng 17/3/2024, Báo tuổi trẻ phối hợp các Trường Đại học tổ chức Ngày Hội tư vấn Tuyển sinh - Hướng
-                nghiệp tại Đại học Bách Khoa Hà Nội</h3>
-            <button class="beautiful-button">XEM CHI TIẾT</button>
+    <div class="flex justify-around mt-3">
+        <p class="font-bold text-center text-blue-800 text-xl">SAU ĐẠI HỌC</p>
+        <p class="font-bold text-center text-blue-800 text-xl">ĐẠI HỌC</p>
+        <p class="font-bold text-center text-blue-800 text-xl">LIÊN THÔNG ĐẠI HỌC</p>
+        <p class="font-bold text-center text-blue-800 text-xl">CAO ĐẲNG</p>
+    </div>
+    <div class="bg-gray-100">
+        <div class="text-center font-bold text-xl m-7">
+            TIN TUYỂN SINH
         </div>
-        <div class="column" style="background-color:#aaa;">
-            <img src="tin_tuc_2024.png" alt="" class="anh_tin">
-            <h2>Đại học Công nghiệp Hà Nội tư vấn tuyển sinh hướng nghiệp tại Đại học Bách khoa Hà Nội</h2>
-            <h3>Ngày đăng: 17/03/2024 04:00:00
-                Sáng 17/3/2024, Báo tuổi trẻ phối hợp các Trường Đại học tổ chức Ngày Hội tư vấn Tuyển sinh - Hướng
-                nghiệp tại Đại học Bách Khoa Hà Nội</h3>
-            <button class="beautiful-button">XEM CHI TIẾT</button>
+        <div class="flex justify-around m-5">
+            <img class="w-80 h-54 m-auto shadow-md radius-md"
+                src="https://tuyensinh.haui.edu.vn/static/uploads/thumbs/1710492669765.jpg" alt="">
+            <img class="w-80 h-54 m-auto shadow-md radius-md"
+                src="https://tuyensinh.haui.edu.vn/static/uploads/thumbs/1709606375189.jpg" alt="">
+            <img class="w-80 h-54 m-auto shadow-md radius-md"
+                src="https://tuyensinh.haui.edu.vn/static/uploads/thumbs/1710690395842.jpg" alt="">
         </div>
-        <div class="column" style="background-color:#aaa;">
-            <img src="tin_tuc_2024.png" alt="" class="anh_tin">
-            <h2>Đại học Công nghiệp Hà Nội tư vấn tuyển sinh hướng nghiệp tại Đại học Bách khoa Hà Nội</h2>
-            <h3>Ngày đăng: 17/03/2024 04:00:00
-                Sáng 17/3/2024, Báo tuổi trẻ phối hợp các Trường Đại học tổ chức Ngày Hội tư vấn Tuyển sinh - Hướng
-                nghiệp tại Đại học Bách Khoa Hà Nội</h3>
-            <button class="beautiful-button">XEM CHI TIẾT</button>
+        <div class="flex justify-around mt-3">
+            <p class="font-bold text-center text-blue-800 text-xl">XEM CHI TIẾT</p>
+            <p class="font-bold text-center text-blue-800 text-xl">XEM CHI TIẾT</p>
+            <p class="font-bold text-center text-blue-800 text-xl">XEM CHI TIẾT</p>
         </div>
     </div>
-    <div class="row" style="margin-top: 50px;margin-bottom: 20px;">
-        <div class="column" style="background-color:#aaa;">
-            <img src="tin_tuc_2024.png" alt="" class="anh_tin">
-            <h2>Đại học Công nghiệp Hà Nội tư vấn tuyển sinh hướng nghiệp tại Đại học Bách khoa Hà Nội</h2>
-            <h3>Ngày đăng: 17/03/2024 04:00:00
-                Sáng 17/3/2024, Báo tuổi trẻ phối hợp các Trường Đại học tổ chức Ngày Hội tư vấn Tuyển sinh - Hướng
-                nghiệp tại Đại học Bách Khoa Hà Nội</h3>
-            <button class="beautiful-button">XEM CHI TIẾT</button>
-        </div>
-        <div class="column" style="background-color:#aaa;">
-            <img src="tin_tuc_2024.png" alt="" class="anh_tin">
-            <h2>Đại học Công nghiệp Hà Nội tư vấn tuyển sinh hướng nghiệp tại Đại học Bách khoa Hà Nội</h2>
-            <h3>Ngày đăng: 17/03/2024 04:00:00
-                Sáng 17/3/2024, Báo tuổi trẻ phối hợp các Trường Đại học tổ chức Ngày Hội tư vấn Tuyển sinh - Hướng
-                nghiệp tại Đại học Bách Khoa Hà Nội</h3>
-            <button class="beautiful-button">XEM CHI TIẾT</button>
-        </div>
-        <div class="column" style="background-color:#aaa;">
-            <img src="tin_tuc_2024.png" alt="" class="anh_tin">
-            <h2>Đại học Công nghiệp Hà Nội tư vấn tuyển sinh hướng nghiệp tại Đại học Bách khoa Hà Nội</h2>
-            <h3>Ngày đăng: 17/03/2024 04:00:00
-                Sáng 17/3/2024, Báo tuổi trẻ phối hợp các Trường Đại học tổ chức Ngày Hội tư vấn Tuyển sinh - Hướng
-                nghiệp tại Đại học Bách Khoa Hà Nội</h3>
-            <button class="beautiful-button">XEM CHI TIẾT</button>
-        </div>
-    </div>
-    <br>
-    <div class="chuanut">
-        <button class="button">XEM TẤT CẢ</button>
+    <div class="text-center font-bold text-xl m-7 text-blue-800">
+        HƯỚNG DẪN THỦ TỤC NHẬP HỌC
+        <HR></HR>
+        <button class="mt-3 px-5 py-2 bg-blue-900 text-white">Xem tất cả</button>
     </div>
 
-    <div class="chua_anh_so_luong">
-        <img src="anh_so_luong.png" alt="">
-    </div>
-<br>
-    <div class="chua_thu_tuc">
-        <h1 style="font-weight: bold;color: blue;">HƯỚNG DẪN THỦ TỤC NHẬP HỌC</h1>
-    </div>
-    <br>
-    <div class="chua_thu_tuc">
-        <button class="button">XEM TẤT CẢ</button>
-    </div>
-    <!-- phần footer -->
-    <div class="flex items-center justify-center bg-blue-900 text-white px-20" style="margin-top:100px ;">
+    <!--content>
+    <!-footer-->
+    <div class="flex items-center justify-center bg-blue-900 text-white px-20">
         <div class="px-10">
-            <img class="h-20 w-20"
-                src="https://lh3.googleusercontent.com/proxy/wdFPj_nRO-eKMU2KwWh2sNqcI3F8C1TJM8O-AUFCAyeRRwaxjvWoRV6NfZYyVKGPiDeQdZdvTv1yqYZCWkg6_6C4CgqQf9GXCoLKhw"
-                alt="logo">
+            <img class="h-20 w-20" src="img/logo.jpg" alt="logo">
         </div>
         <div class="px-10">
             <div class="font-semibold text-xl">Bản đồ chỉ dẫn </div>
@@ -279,7 +139,7 @@
     <div class="font-semibold flex items-center justify-center bg-blue-950 text-white p-6">
         <p>Copyright © 2018 Đại Học Công Nghiệp Hà Nội</p>
     </div>
-
+    <!--footer-->
 </body>
 
 </html>
